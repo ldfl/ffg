@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="default" namespace="/" extends="struts-default">
+    	<!-- action标签配置控制器：name:请求地址；class:控制器类名；method:控制器的方法 -->
+		<action name="hello" class="cn.sxt.action.HelloAction" method="execute">
+			<result>/hello.jsp</result>
+		</action>
+     </package>
+</struts>
